@@ -277,50 +277,42 @@
   <!-- generic resources -->
   <browser:resource
     name="qrcode.js"
-    file="resources/qrcode.js"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/qrcode.js" />
 
   <browser:resource
     name="bda.plone.orders.js"
-    file="resources/orders.js"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/orders.js" />
 
   <!-- XXX: directory registration later needed for plone 4 icons only -->
   <browser:resourceDirectory
     name="bda.plone.orders"
-    directory="resources"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    directory="resources" />
 
   <!-- plone 4 resources -->
   <browser:resource
     zcml:condition="not-have plone-5"
     name="bda.plone.orders.css"
-    file="resources/orders_p4.css"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/orders_p4.css" />
 
   <browser:resource
     zcml:condition="not-have plone-5"
     name="bda.plone.orders_print.css"
-    file="resources/orders_print_p4.css"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/orders_print_p4.css" />
 
   <!-- plone 5 resources -->
   <browser:resource
     zcml:condition="have plone-5"
     name="bda.plone.orders.less"
-    file="resources/orders_p5.less"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/orders_p5.less" />
 
   <browser:resource
     zcml:condition="have plone-5"
     name="bda.plone.orders.css"
-    file="resources/orders_p5.css"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/orders_p5.css" />
 
   <browser:resource
     zcml:condition="have plone-5"
     name="bda.plone.orders.css.map"
-    file="resources/orders_p5.css.map"
-    layer="..interfaces.IOrdersExtensionLayer" />
+    file="resources/orders_p5.css.map" />
 
 </configure>
